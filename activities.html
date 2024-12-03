@@ -7,22 +7,38 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="images/logoo.png" alt="Couples Resort Logo">
-      <h1>Couples Resort</h1>
-    </div>
-    <nav class="menu">
-      <button class="menu-button">☰</button>
+  <header class="grid-con" id="main-header">
+    <nav id="main-nav" class="col-span-full">
+        <h2 class="hidden">Main Navigation</h2>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">
+        <img src="images/burger.svg" alt="hamburger menu icon">
+        </label>
+        <div id="burger-con">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="room.html">Dining</a></li>
+                <li><a href="spa.html">Spa Activites</a></li>
+                <li><a href="#">Reservations</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
+    <div id="logo" class="col-span-full">
+        <div class="logo">
+          <img src="images/logoo.png" alt="Couples Resort Logo">
+          <h1>Couples Resort</h1>
+      </div>
+    </div>
+</header> 
 
   <main class="main-content">
     <!-- Activities Section -->
     <section class="activities">
       <h2>Activities</h2>
       <div class="activity-section">
-        <h3>Winter</h3>
+        <h3><input type="checkbox"><span>Winter</span></h3>
         <img src="images/winter 1.png" alt="Winter Activities" class="activity-img">
         <p>
           Enjoy snow-covered trails, cozy fires, and outdoor adventures during the winter season.
