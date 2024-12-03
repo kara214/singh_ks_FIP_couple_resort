@@ -373,4 +373,18 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+input[type="checkbox"] {
+  background-color: #fff;
+  border-radius: 8px;
+}
 
+input[type="checkbox"]:checked + span {
+  color: #4211f0;
+}
+
+
+input[type="checkbox"]:checked + span::after {
+  content: "\1F33F";
+  font-size: 20px;
+  margin-left: 15px;
+ }
